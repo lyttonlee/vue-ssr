@@ -1,0 +1,8 @@
+{
+  "name": "vue-ssr",
+  "version": "1.0.0",
+  "description": "vue-ssr vue服务端渲染简易模版",
+  "main": "index.js",
+  "author": "lyttonlee<lzr3278@163.com>",
+  "license": "MIT"
+}
