@@ -27,7 +27,8 @@ const devServer = {
   overlay: {
     errors: true
   },
-  hot: true
+  hot: true,
+  historyApiFallback: true
 }
 if (isDev) {
   config = merge(baseConfig, {
@@ -46,6 +47,13 @@ if (isDev) {
               }
             },
             'less-loader'
+          ]
+        },
+        {
+          test: /\.css$/,
+          use: [
+            'vue-style-loader',
+            'css-loader'
           ]
         }
       ]
@@ -79,6 +87,13 @@ if (isDev) {
               }
             },
             'less-loader'
+          ]
+        },
+        {
+          test: /\.css$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader'
           ]
         }
       ]

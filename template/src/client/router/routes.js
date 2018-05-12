@@ -2,7 +2,7 @@ const options = {
   mode: 'history',
   routes: [
     {
-      path: '/home',
+      path: '/',
       component: () => import('@/client/views/home'),
       meta: {
         name: 'home'
@@ -14,6 +14,10 @@ const options = {
       meta: {
         name: 'vuex'
       }
+    },
+    {
+      path: '*',
+      component: () => import('@/client/views/404')
     }
   ]
 }
