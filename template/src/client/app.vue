@@ -2,10 +2,11 @@
   <div class="app">
     <h1>{{msg}}</h1>
     <page-vue></page-vue>
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import PageVue from '@/components/hello'
+import PageVue from '@/client/components/hello'
 export default {
   data () {
     return {
@@ -26,5 +27,3 @@ export default {
   }
 }
 </style>
-
-
