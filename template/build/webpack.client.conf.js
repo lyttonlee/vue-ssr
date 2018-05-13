@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const VueClientRenderPlugin = require('vue-server-renderer/client-plugin')
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.config.base')
 
@@ -17,7 +18,8 @@ const DefaultPlugins = [
     'process.env': {
       NODE_ENV: isDev ? '"development"' : '"production"'
     }
-  })
+  }),
+  new VueClientRenderPlugin()
 ]
 let config
 const devServer = {
@@ -107,7 +109,7 @@ if (isDev) {
     plugins: DefaultPlugins.concat([
       new MiniCssExtractPlugin({
         filename: 'static/css/[name].[chunkhash:8].css',
-        chunkFilename: 'static/css/[id].[chunkhash:8].css'
+        chunkFilename: 'static/css/[name].[chunkhash:8].css'
       })
     ])
   })
