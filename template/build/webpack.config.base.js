@@ -7,10 +7,11 @@ const resolve = dir => {
 const config = {
   target: 'web',
   mode: process.env.NODE_ENV,
-  entry: path.join(__dirname, '../src/client/main.js'),
+  entry: path.join(__dirname, '../src/client/client-entry.js'),
   output: {
     filename: '[name].[hash:8].js',
-    path: path.join(__dirname, '../dist')
+    path: path.join(__dirname, '../dist'),
+    publicPath: 'http://127.0.0.1:8080/'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],

@@ -68,12 +68,13 @@ if (isDev) {
 } else {
   config = merge(baseConfig, {
     entry: {
-      app: path.join(__dirname, '../src/client/main.js'),
+      app: path.join(__dirname, '../src/client/client-entry.js'),
       vendor: ['vue']
     },
     output: {
       filename: 'static/js/[name].[chunkhash:8].js',
-      path: path.join(__dirname, '../dist')
+      path: path.join(__dirname, '../dist'),
+      publicPath: 'dist/'
     },
     module: {
       rules: [

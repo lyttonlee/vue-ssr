@@ -36,11 +36,12 @@ const handleSSR = async ctx => {
     return
   }
   // 获取客户端数据,通过vue-server-renderer/client-plugin 生成
+  // console.log('start req 8080')
   const clientManifestResp = await axios.get(
-    'http://loacalhost:8080/vue-ssr-client-manifest.json'
+    'http://127.0.0.1:8080/vue-ssr-client-manifest.json'
   )
   const clientManifest = clientManifestResp.data
-  console.log(clientManifest)
+  // console.log('clientManifest', clientManifest)
   const template = fs.readFileSync(
     path.join(__dirname, '../template.ejs'),
     'utf-8'
