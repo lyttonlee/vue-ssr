@@ -16,7 +16,7 @@ const options = {
       }
     },
     {
-      path: '*',
+      path: '/*',
       component: () => import('@/client/views/404')
     }
   ]

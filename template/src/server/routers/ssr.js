@@ -17,7 +17,7 @@ const template = fs.readFileSync(path.join(__dirname, '../template.ejs'), 'utf-8
 
 const PageRouter = new Router()
 
-PageRouter.get('*', async ctx => {
+PageRouter.get('/*', async ctx => {
   await serverRenderer(ctx, renderer, template)
 })
 

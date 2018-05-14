@@ -49,7 +49,7 @@ const handleSSR = async ctx => {
   const renderer = VueServerRenderer.createBundleRenderer(bundle, {
     inject: false,
     clientManifest
-  }) 
+  })
 
   await serverRender(ctx, renderer, template)
 }

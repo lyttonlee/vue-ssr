@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="page">
     <h1>vuex</h1>
+    <img src="../assets/1.jpg" alt="">
     <div>
       <h2>State</h2>
       <p>num: {{num}}</p>
@@ -75,7 +76,7 @@ export default {
       this.updateNum(data)
     }
     // 使用this.$store的写法
-    // updateNum () {
+    // syncUpdateNum () {
     //   this.$store.commit('increment', this.increNum)
     //   this.increNum = null
     // },
@@ -89,3 +90,8 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+.page {
+  background-color: rgba(201, 179, 179, .3);
+}
+</style>

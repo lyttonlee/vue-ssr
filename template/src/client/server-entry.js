@@ -10,6 +10,7 @@ export default context => {
       const matchedComponents = router.getMatchedComponents()
       if (!matchedComponents.length) {
         console.log('no components matched!')
+        return reject(new Error('no components catched'))
       }
       context.meta = app.$meta()
       resolve(app)

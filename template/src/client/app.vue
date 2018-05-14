@@ -15,7 +15,7 @@ export default {
   },
   data () {
     return {
-      msg: 'vue-ssr'
+      msg: 'vue-ssr-template'
     }
   },
   components: {
