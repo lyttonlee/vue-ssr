@@ -2,6 +2,7 @@
   <div class="page">
     <h1>vuex</h1>
     <img src="../assets/1.jpg" alt="">
+    <p>vuex test</p>
     <div>
       <h2>State</h2>
       <p>num: {{num}}</p>

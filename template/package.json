@@ -1,7 +1,9 @@
 {
-  "name": "webpack4",
   "version": "1.0.0",
-  "main": "main.js",
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "main": "client-entry.js,server-entry.js",
   "license": "MIT",
   "scripts": {
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.conf.js",

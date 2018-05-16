@@ -37,6 +37,7 @@ const handleSSR = async ctx => {
   }
   // 获取客户端数据,通过vue-server-renderer/client-plugin 生成
   // console.log('start req 8080')
+  // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*'
   const clientManifestResp = await axios.get(
     'http://127.0.0.1:8080/vue-ssr-client-manifest.json'
   )

@@ -69,38 +69,38 @@ module.exports = {
     //     },
     //   ],
     // },
-    router: {
-      // when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
-    lint: {
-      // when: 'isNotTest',
-      type: 'confirm',
-      message: 'Use ESLint to lint your code?',
-    },
-    lintConfig: {
-      when: 'lint',
-      type: 'list',
-      message: 'Pick an ESLint preset',
-      choices: [
-        {
-          name: 'Standard (https://github.com/standard/standard)',
-          value: 'standard',
-          short: 'Standard',
-        },
-        {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
-          value: 'airbnb',
-          short: 'Airbnb',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
-      ],
-    },
+    // router: {
+    //   // when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Install vue-router?',
+    // },
+    // lint: {
+    //   // when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Use ESLint to lint your code?',
+    // },
+    // lintConfig: {
+    //   when: 'lint',
+    //   type: 'list',
+    //   message: 'Pick an ESLint preset',
+    //   choices: [
+    //     {
+    //       name: 'Standard (https://github.com/standard/standard)',
+    //       value: 'standard',
+    //       short: 'Standard',
+    //     },
+    //     {
+    //       name: 'Airbnb (https://github.com/airbnb/javascript)',
+    //       value: 'airbnb',
+    //       short: 'Airbnb',
+    //     },
+    //     {
+    //       name: 'none (configure it yourself)',
+    //       value: 'none',
+    //       short: 'none',
+    //     },
+    //   ],
+    // },
     // unit: {
     //   when: 'isNotTest',
     //   type: 'confirm',
