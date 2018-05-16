@@ -158,8 +158,8 @@ module.exports = {
     },
   },
   filters: {
-    '.eslintrc.js': 'lint',
-    '.eslintignore': 'lint',
+    // '.eslintrc.js': 'lint',
+    // '.eslintignore': 'lint',
     // 'config/test.env.js': 'unit || e2e',
     // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
     // 'test/unit/**/*': 'unit',
@@ -169,7 +169,7 @@ module.exports = {
     // 'test/unit/specs/index.js': "unit && runner === 'karma'",
     // 'test/unit/setup.js': "unit && runner === 'jest'",
     // 'test/e2e/**/*': 'e2e',
-    'src/router/**/*': 'router',
+    // 'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
