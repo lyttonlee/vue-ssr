@@ -25,12 +25,9 @@ export default {
 </script>
 <style lang="less" scoped>
 .app {
-  background-image: url('./assets/1.jpg');
-  color: red;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
-  position: relative;
   h1 {
     font-size: 50px;
     margin: 0;

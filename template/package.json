@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "{{ name }}",
+  "name": "name",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "main": "client-entry.js,server-entry.js",
